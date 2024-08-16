@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    
+    <table style="border: 10px; text-align: center;">
+        <tr>
+            <th>id</th>
+            <th>Nome</th>
+            <th>descricao</th>
+            <th>Criador</th>
+            
+        </tr>
+        {% for item in livros %}
+        <tr>
+            <td>{{item.id}}</td>
+            <td>{{item.name}}</td>
+            <td>{{item.descricao}}</td>
+            <td>{{item.autor}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+        
+    
+</body>
+</html>
