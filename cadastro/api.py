@@ -27,9 +27,9 @@ def listar(request, id):
 
 @api.post('cadastrarLivro/')
 def cadastrarLivro(request, livro:LivrosSchema):
-    l1 = Livro.dict()
+    l1 = livro.dict()
     livro = Livro(** l1)
-    Livro.save()
+    livro.save()
     return livro
 
 
